@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<LanguageData>
-  <MBE_SmallExchange.label>小型交換ステーション</MBE_SmallExchange.label>
-  <MBE_SmallExchange.description>同機種専用の内部バッテリーを3本備えた交換設備です。1本ずつ充電し、管理下のメカと満充電バッテリーを交換します。使用前にスロットを設定してください。</MBE_SmallExchange.description>
-  <MBE_LargeExchange.label>大型交換ステーション</MBE_LargeExchange.label>
-  <MBE_LargeExchange.description>同機種専用の内部バッテリーを3本備えた交換設備です。1本ずつ充電し、管理下のメカと満充電バッテリーを交換します。使用前にスロットを設定してください。</MBE_LargeExchange.description>
-</LanguageData>
