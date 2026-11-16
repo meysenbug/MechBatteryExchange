@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <MBE_SmallExchange.label>small mech battery exchange</MBE_SmallExchange.label>
+  <MBE_SmallExchange.description>A station with three internal, type-specific batteries. Charges one battery at a time and exchanges fully charged batteries with controlled mechs. Configure slots before use.</MBE_SmallExchange.description>
+  <MBE_LargeExchange.label>large mech battery exchange</MBE_LargeExchange.label>
+  <MBE_LargeExchange.description>A station with three internal, type-specific batteries. Charges one battery at a time and exchanges fully charged batteries with controlled mechs. Configure slots before use.</MBE_LargeExchange.description>
+</LanguageData>

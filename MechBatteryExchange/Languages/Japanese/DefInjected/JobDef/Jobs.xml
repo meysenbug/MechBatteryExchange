@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <MBE_Exchange.reportString>TargetAでバッテリーを交換している。</MBE_Exchange.reportString>
+  <MBE_CarryToExchange.reportString>TargetAをTargetBへ運び、バッテリーを交換している。</MBE_CarryToExchange.reportString>
+</LanguageData>
