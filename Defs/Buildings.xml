@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>MBE_SmallExchange</defName>
+    <label>small mech battery exchange</label>
+    <description>Exchanges a mech battery with a fully charged internal battery of the same mech type. Three slots share one charging circuit. Configure slots before use.</description>
+    <thingClass>MechBatteryExchange.Building_Exchange</thingClass>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>true</hasInteractionCell>
+    <canOverlapZones>false</canOverlapZones>
+    <fillPercent>0.3</fillPercent>
+    <designationCategory>Biotech</designationCategory>
+    <uiOrder>2411</uiOrder>
+    <drawerType>MapMeshOnly</drawerType>
+    <minifiedDef IsNull="True" />
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <passability>PassThroughOnly</passability>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <costList>
+      <Steel>250</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>BasicMechtech</li>
+    </researchPrerequisites>
+    <graphicData>
+      <texPath>Things/Building/MBE_Small</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1.25)</drawSize>
+    </graphicData>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+      <requiredMechWeightClasses>
+        <li>Light</li>
+      </requiredMechWeightClasses>
+    </building>
+    <comps>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_WasteProducer">
+        <showContentsInInspectPane>false</showContentsInInspectPane>
+      </li>
+      <li Class="CompProperties_ThingContainer">
+        <compClass>CompThingContainer</compClass>
+        <stackLimit>5</stackLimit>
+        <drawContainedThing>false</drawContainedThing>
+        <dropEffecterDef>MechChargerWasteRemoved</dropEffecterDef>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MechBatteryExchange.ExchangeProperties">
+        <exchangeTicks>180</exchangeTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>MBE_LargeExchange</defName>
+    <label>large mech battery exchange</label>
+    <description>Exchanges a mech battery with a fully charged internal battery of the same mech type. Three slots share one charging circuit. Configure slots before use.</description>
+    <thingClass>MechBatteryExchange.Building_Exchange</thingClass>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>true</hasInteractionCell>
+    <canOverlapZones>false</canOverlapZones>
+    <fillPercent>0.3</fillPercent>
+    <designationCategory>Biotech</designationCategory>
+    <uiOrder>2412</uiOrder>
+    <drawerType>MapMeshOnly</drawerType>
+    <minifiedDef IsNull="True" />
+    <interactionCellOffset>(0,0,2)</interactionCellOffset>
+    <passability>PassThroughOnly</passability>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(3,2)</size>
+    <costList>
+      <Steel>500</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>StandardMechtech</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <graphicData>
+      <texPath>Things/Building/MBE_Large</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+      <requiredMechWeightClasses>
+        <li>Medium</li>
+        <li>Heavy</li>
+        <li>UltraHeavy</li>
+      </requiredMechWeightClasses>
+    </building>
+    <comps>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_WasteProducer">
+        <showContentsInInspectPane>false</showContentsInInspectPane>
+      </li>
+      <li Class="CompProperties_ThingContainer">
+        <compClass>CompThingContainer</compClass>
+        <stackLimit>10</stackLimit>
+        <drawContainedThing>false</drawContainedThing>
+        <dropEffecterDef>MechChargerWasteRemoved</dropEffecterDef>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MechBatteryExchange.ExchangeProperties">
+        <exchangeTicks>360</exchangeTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>
